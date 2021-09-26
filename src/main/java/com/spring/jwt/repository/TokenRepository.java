@@ -7,5 +7,6 @@ import com.spring.jwt.entity.Token;
 
 @Repository
 public interface TokenRepository extends JpaRepository<Token, Long>{
-
+	
+	Token findByToken(String token);
 }
